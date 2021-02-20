@@ -18,18 +18,20 @@ if __name__ == '__main__':
     ellie = turtle.Turtle()
     # Have your turtle draw a circle with the correct radius
     # my_turtle.circle()
-    ellie.circle()
+    ellie.circle(pixels,360,100)
     # Call the turtle .penup() method
     ellie.penup()
     # Move your turtle to a new x,y position using .goto()
-    ellie.goto()
+    ellie.goto(-90,-50)
     # Calculate the area of your circle and store it in a variable
     # Hint, you can use math.pi
-    
+
+    area = math.pi * pixels * pixels
     # Write the area of your circle using the turtle .write() method
-    # my_turtle.write(arg="area = " + str(area), move=True, align='left', font=('Arial',8,'normal'))
+
+    ellie.write(arg="area = " + str(area), move=True, align='left', font=('Arial',8,'normal'))
 
     # Hide your turtle
-
+    ellie.hideturtle()
     # Call turtle.done()
     turtle.done()
